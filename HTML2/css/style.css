@@ -1,0 +1,103 @@
+
+
+.item
+{
+    width: 150px;
+    height: 80px;
+    background-color: orange;
+    animation-name: change-bg;
+    animation-duration:4s;
+    animation-iteration-count:3;
+    animation-fill-mode: forwards;
+    /* transition-delay: 1s;
+    transition-duration: 0.5s;*/
+    animation-timing-function:cubic-bezier(0.22, 0.61, 0.36, 1.01) ; 
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+/* .item:hover{
+    background-color: gray;
+    transform: rotate(20deg) scale(1.2);
+} */
+
+.text{
+    animation-name: rubberBand;
+}
+
+@keyframes change-bg{
+    0%{
+        background-color: orange;
+    }
+    20%{
+        background-color: green;
+    }
+    50%{
+        background-color: indigo;
+    }
+    70%{
+        background-color: lightblue;
+    }
+    85%{
+        background-color: gray;
+    }
+    100%{
+        background-color: orange;
+    }
+}
